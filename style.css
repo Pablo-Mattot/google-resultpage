@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    padding: 2em;
+    grid-template-columns: 120px 600px auto;
+    grid-template-areas: 
+        "brand search top-nav";
+    grid-gap: 20px;
+}
+
+#brand {
+    width: 92px;
+    grid-area: brand;
+}
+
+.top-nav {
+    grid-area: top-nav;
+    text-align: right;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+input[type="search"] {
+    grid-area: search;
+}
