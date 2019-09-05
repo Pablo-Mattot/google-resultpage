@@ -1,9 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
     box-sizing: border-box;
     background-color: #ffeead;
     height: 100%;
-    padding: 0;
-    margin: 0;
+  }
+
+  a {
+      text-decoration: none;
   }
   
   .container > div:nth-child(1n) {
@@ -35,14 +42,36 @@ html, body {
         "f f f";
 }
 
+/* Header with searchbar */
 .header {
     grid-area: h;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 160px 2fr 1fr;
+    align-items: center;
 }
 
+#brand {
+    width: 100px;
+    justify-self: center;
+}
+
+.top-nav {
+    justify-self: end;
+    margin-right: 30px;
+}
+
+/* Navigation */
 .menu {
     grid-area: m;
 }
 
+.menu li {
+    display: inline-block;
+}
+
+
+/* Main content */
 .content {
     grid-area: c;
 }
